@@ -1,0 +1,35 @@
+body{
+    margin: 0px;
+    background-color:beige;
+}
+.grid-container{
+    min-height: 100vh;
+    display: grid;
+    grid-template: 
+    "header header header" 50px
+    "right-side main left-side" 1fr 
+    "footer footer footer" 50px /
+    200px 1fr 200px;
+
+}
+.head{
+    background-color: blueviolet;
+    grid-area: header;
+}
+.right-side{
+    background-color: cadetblue;
+    grid-area: side;
+}
+.mid-main{
+    background-color: cyan;
+    grid-area: main;
+    min-height: 100px;
+}
+.left-side{
+    background-color: darkseagreen;
+    grid-area: side;
+}
+.footer{
+    background-color: goldenrod;
+    grid-area: footer;
+}
